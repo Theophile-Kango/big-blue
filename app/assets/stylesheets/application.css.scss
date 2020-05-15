@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.header{
+    background: black;
+    height: 650px;
+    img{
+        width: 100%;
+        opacity: .5;
+        object-fit: cover;
+        height: 100%;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        line-height: 1.5em;
+        color: white;
+        position: relative;
+        bottom: 550px;
+        text-align: center;
+        padding: 80px;
+        font-size: 3em;
+        
+    }
+}
+
+footer{
+    background: #6666c6;
+    color: white;
+    padding: 10px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    ul{
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+        li{
+            display: flex;
+        }
+    }
+    ul:nth-child(1) {
+        text-transform: uppercase;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .header{
+        height: 550px;
+        p{
+            bottom: 450px;
+            padding: 60px;
+            font-size: 2.5em;
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .header{
+        height: 400px;
+        p{
+            bottom: 350px;
+            padding: 50px;
+            font-size: 1.8em;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        height: 300px;
+        p{
+            bottom: 250px;
+            padding: 40px;
+            font-size: 1.3em;
+        }
+    }
+}
